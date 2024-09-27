@@ -1,16 +1,16 @@
 ---
 import { Image } from "astro:assets";
-import thumbsup from "../assets/images/thumbsup.png";
+import linkedin from "../assets/images/linkedin.svg";
 ---
 
 <div>
   <article>
-    <h1>Kontakt</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, pariatur consectetur earum eligendi blanditiis incidunt saepe repudiandae nemo illum officia voluptatibus? Nam expedita sequi quis eius error at. Necessitatibus, commodi.</p>
+    <h1 class="text-9xl text-[#252020] text-center">Kontakt</h1>
+    <p class="prose">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, pariatur consectetur earum eligendi blanditiis incidunt saepe repudiandae nemo illum officia voluptatibus? Nam expedita sequi quis eius error at. Necessitatibus, commodi.</p>
   </article>
-  <article>
-    <Image src={thumbsup} alt="" />
-    <p>trine.e.larsen@gmail.com</p>
-    <p>+4560226630</p>
+  <article class="flex md:flex-row justify-between">
+    <Image class="order-3 self-center" src={linkedin} alt="" />
+    <p class="order-2 text-2xl text-[#252020]">trine.e.larsen@gmail.com</p>
+    <p class="text-2xl text-[#252020]">+4560226630</p>
   </article>
 </div>
