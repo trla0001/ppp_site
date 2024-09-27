@@ -4,25 +4,25 @@ import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
-import hero from "../assets/images/hero.jpg";
+import hero from "../assets/images/hero.webp";
 ---
 
 <MainLayout title="Trines Personlige Professionelle Profil">
-  <section>
-    <article>
-      <h1>UX/UI Designer</h1>
-      <p>Mit navn er Trine, jeg er 27 år og studerer multimediedesign på Københavns Erhvervsakademi. Jeg har en stor interesse for UX design og gennemføre brugerundersøgelser og brugertest, samt udvikle grafiske designs. Jeg ser frem til at blive en del af et team, hvor jeg kan udvikle mine kompetencer og bidrage med kreative og brugervenlige løsninger.</p>
+  <section class="grid md:grid-cols-2">
+    <article class="content-center">
+      <h1 class="text-8xl text-[#252020]">UX/UI Designer</h1>
+      <p class="text-xl text-[#252020]">Mit navn er Trine, jeg er 27 år og studerer multimediedesign på Københavns Erhvervsakademi. Jeg har en stor interesse for UX design og gennemføre brugerundersøgelser og brugertest, samt udvikle grafiske designs. Jeg ser frem til at blive en del af et team, hvor jeg kan udvikle mine kompetencer og bidrage med kreative og brugervenlige løsninger.</p>
     </article>
-    <Image src={hero} alt="" />
+    <Image class="border-8 border-white rotate-[-13deg]" src={hero} alt="" />
   </section>
 
-  <section>
-    <h2>Kvalifikationer</h2>
+  <section class="mt-16">
+    <h2 class="text-6xl text-[#252020] text-center">Kvalifikationer</h2>
     <!-- Card komponenter -->
   </section>
 
   <section>
-    <h2>Erfaringer</h2>
+    <h2 class="text-6xl text-[#252020] text-center">Erfaringer</h2>
     <!-- Horisontal scrolling kodestump -->
   </section>
 </MainLayout>
