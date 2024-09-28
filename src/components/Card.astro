@@ -2,12 +2,18 @@
 const { titel, liste1, liste2, liste3, liste4 } = Astro.props;
 ---
 
-<article class="bg-[#A8A0BB]">
+<article class="bg-[#A8A0BB] text-[#252020]">
   <h3>{titel}</h3>
-  <ul>
+  <ul class="list-disc">
     <li>{liste1}</li>
     <li>{liste2}</li>
     <li>{liste3}</li>
     <li>{liste4}</li>
   </ul>
 </article>
+
+<style>
+  ul li::marker {
+    color: #67568c; /* Ændrer prikken til rød */
+  }
+</style>
