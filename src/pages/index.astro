@@ -2,8 +2,8 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
+import Card from "../components/Card.astro";
 import { Image } from "astro:assets";
-import thumbsup from "../assets/images/thumbsup.png";
 import hero from "../assets/images/hero.webp";
 ---
 
@@ -18,7 +18,12 @@ import hero from "../assets/images/hero.webp";
 
   <section class="mt-16">
     <h2 class="text-6xl text-[#252020] text-center">Kvalifikationer</h2>
-    <!-- Card komponenter -->
+    <Card titel="Programmer">
+      <ul>
+        <li>Figma</li>
+        <li>Illustrator</li>
+      </ul>
+    </Card>
   </section>
 
   <section>
