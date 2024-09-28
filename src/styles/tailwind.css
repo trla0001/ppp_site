@@ -3,10 +3,32 @@
 @tailwind utilities;
 
 @layer base {
-  @import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
-  body {
-    font-family: "Italiana", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  @layer base {
+    /* Importer fontene Italiana, Lato og Just Another Hand */
+    @import url("https://fonts.googleapis.com/css2?family=Italiana&family=Lato:wght@400&family=Just+Another+Hand&display=swap");
+
+    /* Anvend Italiana til h1, h2 og h3 */
+    h1,
+    h2,
+    h3 {
+      font-family: "Italiana", sans-serif;
+      font-weight: 400;
+    }
+
+    /* Anvend Just Another Hand til h4 */
+    h4 {
+      font-family: "Just Another Hand", sans-serif;
+    }
+
+    /* Anvend Lato til p-tags med regular width */
+    p {
+      font-family: "Lato", sans-serif;
+      font-weight: 400; /* Regular weight */
+    }
+
+    /* Hvis du ønsker body som en standard font */
+    body {
+      font-family: "Italiana", sans-serif;
+    }
   }
 }
