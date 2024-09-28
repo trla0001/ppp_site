@@ -5,16 +5,16 @@
 @layer base {
   /* Italiana, Lato og Just Another Hand */
   @import url("https://fonts.googleapis.com/css2?family=Italiana&family=Just+Another+Hand&family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
-  h4 {
-    font-family: "Just Another Hand", cursive;
-    font-weight: normal;
-    font-style: normal;
-  }
 
   h1,
   h2 {
     font-family: "Italiana", sans-serif;
     font-weight: 400;
+    font-style: normal;
+  }
+
+  h4 {
+    font-family: "Just Another Hand", cursive;
     font-style: normal;
   }
 
