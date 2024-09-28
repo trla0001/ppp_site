@@ -1,8 +1,13 @@
 ---
-const { titel } = Astro.props;
+const { titel, liste1, liste2, liste3, liste4 } = Astro.props;
 ---
 
-<article>
+<article class="bg-[#A8A0BB]">
   <h3>{titel}</h3>
-  <slot />
+  <ul>
+    <li>{liste1}</li>
+    <li>{liste2}</li>
+    <li>{liste3}</li>
+    <li>{liste4}</li>
+  </ul>
 </article>
