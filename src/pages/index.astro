@@ -4,20 +4,22 @@ import Card from "../components/Card.astro";
 import { Image } from "astro:assets";
 import hero from "../assets/images/hero.webp";
 import blomst_stor from "../assets/images/blomst_stor.svg";
+import blomst_lille from "../assets/images/blomst_lille.svg";
+import pil from "../assets/images/pil.svg";
 ---
 
 <MainLayout title="Trines Personlige Professionelle Profil">
   <section class="mx-11 grid md:grid-cols-2">
     <article class="content-center">
-      <h1 class="text-8xl text-[#252020] pb-3">UX/UI Designer</h1>
+      <div class="flex flex-row justify-center"><h1 class="text-8xl text-[#252020] pb-3">UX/UI Designer</h1><Image class="flex-shrink-0" src={blomst_lille} alt="" /></div>
       <p class="text-lg text-[#252020] prose">Mit navn er Trine, jeg er 27 år og studerer multimediedesign på Københavns Erhvervsakademi. Jeg har en stor interesse for UX design og gennemføre brugerundersøgelser og brugertest, samt udvikle grafiske designs. Jeg ser frem til at blive en del af et team, hvor jeg kan udvikle mine kompetencer og bidrage med kreative og brugervenlige løsninger.</p>
     </article>
     <Image class="border-8 border-white rotate-[-13deg] m-auto" src={hero} alt="" />
   </section>
 
   <div class="flex justify-start"><Image class="absolute flex-shrink-0" src={blomst_stor} alt="" /></div>
-  <section class="mt-16 max-w-7xl mx-auto">
-    <h2 class="text-6xl text-[#252020] text-center">Kvalifikationer</h2>
+  <section class="mt-32 max-w-7xl mx-auto">
+    <div class="flex flex-row justify-center mb-12"><h2 class="text-6xl text-[#252020] text-center">Kvalifikationer</h2><Image class="flex-shrink-0 mt-11" src={pil} alt="" /></div>
     <div class="grid md:grid-cols-4 gap-10 mt-14 mitelement">
       <div class="grid justify-center md:mb-10">
         <Card titel="Programmer" liste1="Figma" liste2="Illustrator" liste3="Lightroom" liste4="Photoshop" />
@@ -38,7 +40,7 @@ import blomst_stor from "../assets/images/blomst_stor.svg";
   </section>
 
   <section class="mt-16 overflow-hidden">
-    <h2 class="text-6xl text-[#252020] text-center">Erfaringer</h2>
+    <div class="flex flex-row justify-center mb-12"><h2 class="text-6xl text-[#252020] text-center">Erfaringer</h2><Image class="flex-shrink-0 mt-11" src={pil} alt="" /></div>
     <div class="flex flex-row justify-center gap-12 min-w-full overflow-x-auto snap-proximity snap-x">
       <div class="snap-start w-[1000px] flex-shrink-0"><img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1604999565976-8913ad2ddb7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" alt="" /></div>
       <div class="snap-center w-[1000px] flex-shrink-0"><img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1604999565976-8913ad2ddb7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" alt="" /></div>
