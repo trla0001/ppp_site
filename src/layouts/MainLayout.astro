@@ -17,12 +17,12 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{Astro.props.title}</title>
   </head>
-  <body class="bg-[#EDECE5]">
+  <body class="bg-[#EDECE5] max-w-7xl mx-auto">
     <header>
       <Header />
     </header>
 
-    <main>
+    <main class="">
       <slot />
     </main>
 
