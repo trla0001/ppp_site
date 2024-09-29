@@ -19,3 +19,16 @@ const { titel, liste1, liste2, liste3, liste4 } = Astro.props;
     color: #67568c; /* Ændrer prikken til rød */
   }
 </style>
+
+<script>
+  // Få fat i alle <li>-elementer
+  const listItems = document.querySelectorAll("ul li");
+
+  // Loop gennem hvert <li>-element og tjek om det er tomt
+  listItems.forEach(function (li) {
+    if (!li.textContent.trim()) {
+      // Tjek om <li> er tomt (efter fjernelse af mellemrum)
+      li.style.display = "none"; // Skjul <li> hvis det er tomt
+    }
+  });
+</script>
