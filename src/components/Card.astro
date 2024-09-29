@@ -2,14 +2,16 @@
 const { titel, liste1, liste2, liste3, liste4 } = Astro.props;
 ---
 
-<article class="bg-[#A8A0BB] text-[#252020]">
-  <h3>{titel}</h3>
-  <ul class="list-disc">
-    <li>{liste1}</li>
-    <li>{liste2}</li>
-    <li>{liste3}</li>
-    <li>{liste4}</li>
-  </ul>
+<article class="bg-[#A8A0BB] text-[#252020] w-[278px] h-[276px] shadow-[0px_4px_7px_-2px_rgba(0,0,0,0.25)] inline-flex flex-col items-center justify-center">
+  <div class="text-left">
+    <h3 class="text-2xl text-left">{titel}</h3>
+    <ul class="list-disc text-left ml-4">
+      <li>{liste1}</li>
+      <li>{liste2}</li>
+      <li>{liste3}</li>
+      <li>{liste4}</li>
+    </ul>
+  </div>
 </article>
 
 <style>
