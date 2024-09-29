@@ -1,7 +1,5 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from "../components/Button.astro";
-import Link from "../components/Link.astro";
 import Card from "../components/Card.astro";
 import { Image } from "astro:assets";
 import hero from "../assets/images/hero.webp";
@@ -37,9 +35,13 @@ import hero from "../assets/images/hero.webp";
     </div>
   </section>
 
-  <section class="mt-16">
+  <section class="mt-16 overflow-hidden">
     <h2 class="text-6xl text-[#252020] text-center">Erfaringer</h2>
-    <!-- Horisontal scrolling kodestump -->
+    <div class="flex flex-row justify-center gap-12 min-w-full overflow-x-auto snap-proximity snap-x">
+      <div class="snap-start w-[1000px] flex-shrink-0"><img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1604999565976-8913ad2ddb7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" alt="" /></div>
+      <div class="snap-center w-[1000px] flex-shrink-0"><img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1604999565976-8913ad2ddb7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" alt="" /></div>
+      <div class="snap-center w-[1000px] flex-shrink-0"><img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1604999565976-8913ad2ddb7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" alt="" /></div>
+    </div>
   </section>
 </MainLayout>
 
