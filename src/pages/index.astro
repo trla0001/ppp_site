@@ -3,6 +3,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Card from "../components/Card.astro";
 import { Image } from "astro:assets";
 import hero from "../assets/images/hero.webp";
+import blomst_stor from "../assets/images/blomst_stor.svg";
 ---
 
 <MainLayout title="Trines Personlige Professionelle Profil">
@@ -14,6 +15,7 @@ import hero from "../assets/images/hero.webp";
     <Image class="border-8 border-white rotate-[-13deg] m-auto" src={hero} alt="" />
   </section>
 
+  <div class="flex justify-start"><Image class="absolute flex-shrink-0" src={blomst_stor} alt="" /></div>
   <section class="mt-16 max-w-7xl mx-auto">
     <h2 class="text-6xl text-[#252020] text-center">Kvalifikationer</h2>
     <div class="grid md:grid-cols-4 gap-10 mt-14 mitelement">
