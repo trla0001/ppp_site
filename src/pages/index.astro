@@ -59,7 +59,11 @@ import border from "../assets/images/border.svg";
 </MainLayout>
 
 <script>
-  import { inView, scroll, animate } from "motion";
+  /* Import af Motion One biblioteket */
+  import { animate, stagger, inView, scroll, timeline } from "motion";
+
+  // Entrance animation
+  animate("body", { opacity: [0, 1] }, { duration: 1 });
 
   const inviewelementet = document.querySelector(".mitelement");
   inView(inviewelementet, () => {
