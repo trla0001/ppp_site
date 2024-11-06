@@ -11,12 +11,14 @@ import border from "../assets/images/border.svg";
 ---
 
 <MainLayout title="Trines PPP">
-  <section class="grid md:grid-cols-2 gap-5 items-center md:mt-4">
-    <Image class="border-8 border-white rotate-[-13deg] m-auto md:order-2 w-80 md:w-96" src={hero} alt="" />
-    <article class="mt-8 md:pt-0">
-      <div class="flex flex-row relative z-10 whitespace-nowrap"><h1 class="text-7xl md:text-6xl lg:text-8xl text-[#252020] pb-3">UX/UI Designer</h1><Image class="flex-shrink-0 mb-[14px] ml-[-14px]" src={blomst_lille} alt="" /></div>
-      <Image class="w-[625px] mt-[-20px]" src={border} alt="" />
-      <p class="text-base lg:text-lg text-[#252020] prose md:pt-6">Mit navn er Trine, jeg er 27 år og studerer multimediedesign på Københavns Erhvervsakademi. Jeg har en stor interesse for UX design og gennemføre brugerundersøgelser og brugertest, samt udvikle grafiske designs. Jeg ser frem til at blive en del af et team, hvor jeg kan udvikle mine kompetencer og bidrage med kreative og brugervenlige løsninger.</p>
+  <section class="grid md:grid-cols-2 md:gap-5 items-center md:mt-4">
+    <div class="md:col-start-2 md:col-span-1 md:row-start-1"><Image class="border-8 border-white rotate-[-13deg] m-auto md:order-2 w-80 md:w-96" src={hero} alt="" /></div>
+    <article class="grid md:grid-cols-1 md:grid-rows-2 mt-8 md:mt-0 md:auto-cols-max md:auto-rows-min gap-y-5 md:gap-y-0">
+      <div class="grid items-end col-start-1 col-span-1 row-start-1 row-span-1 relative z-20 whitespace-nowrap"><h1 class="text-7xl md:text-6xl lg:text-8xl text-[#252020]">UX/UI Designer</h1></div>
+      <div class="grid items-end justify-end col-start-1 col-span-1 row-start-1 row-span-1 relative z-10 lg:left-10"><Image class="" src={blomst_lille} alt="" /></div>
+      <div class="grid items-end col-start-1 col-span-1 row-start-1 row-span-1 relative z-10 content-end"><Image class="" src={border} alt="" /></div>
+      <div class="col-start-1 col-span-1 row-start-2 row-span-1"><p class="text-base lg:text-lg text-[#252020] prose md:pt-6 md:pb-4">Mit navn er Trine, jeg er 27 år og studerer multimediedesign på Københavns Erhvervsakademi. Jeg har en stor interesse for UX design, gennemfører brugerundersøgelser og brugertest, samt udvikle prototyper.</p></div>
+      <div class="col-start-1 col-span-1 row-start-3 row-span-1"><p class="text-base lg:text-lg text-[#252020] prose">Jeg ser frem til at blive en del af et team, hvor jeg kan udvikle mine kompetencer og bidrage med at udvikle brugervenlige løsninger.</p></div>
     </article>
   </section>
 
