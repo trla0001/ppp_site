@@ -48,7 +48,31 @@ import border from "../assets/images/border.svg";
     <div class="flex flex-row justify-center mb-12 relative z-10"><h2 class="text-6xl text-[#252020] text-center">Erfaringer</h2><Image class="flex-shrink-0 mt-11" src={pil} alt="" /></div>
     <div class="flex justify-center mr-24 mt-[-105px] mb-40"><Image class="w-[250px]" src={border} alt="" /></div>
 
-    <section id="horisontalscrollsection" class="h-[80vw] md:h-[100vw] snap-x" id="videoonhover" x-data>
+    <!-----------------------  Mobile version ----------------------->
+    <section id="horisontalscrollsection-mobil" class="h-[80vw] md:h-[100vw] snap-x md:hidden" id="videoonhover" x-data>
+      <ul id="horisontalliste-mobil" class="list-none pl-0 flex sticky top-[10vh] gap-20">
+        <li class="snap-start pl-0 flex w-[100vw] items-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+          <figure class="flex flex-col w-2/3">
+            <video x-ref="hovervideo" muted loop @mouseenter="$refs.hovervideo.play()" @mouseleave="$refs.hovervideo.pause()" @click="$refs.hovervideo.play()">
+              <source src="/rankkeramik.mp4" type="video/mp4" />
+              <source src="/rankkeramik.webm" type="video/webm" />
+            </video><figcaption class="text-sm text-[#252020]">Lars Rank keramik: 2 semester eksamensopgave</figcaption>
+          </figure>
+        </li>
+
+        <li class="flex w-[100vw] items-center justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+          <figure class="flex flex-col w-2/3">
+            <video x-ref="hovervideo2" muted loop @mouseenter="$refs.hovervideo2.play()" @mouseleave="$refs.hovervideo2.pause()">
+              <source src="/singleusesucks.mp4" type="video/mp4" />
+              <source src="/singleusesucks.webm" type="video/webm" />
+            </video><figcaption class="text-sm text-[#252020]">Single Use Sucks: 3 semester caseopgave</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+    <!-----------------------  Desktop version ----------------------->
+    <section id="horisontalscrollsection" class="h-[80vw] md:h-[100vw] snap-x hidden md:block" id="videoonhover" x-data>
       <ul id="horisontalliste" class="list-none pl-0 flex sticky top-[10vh] gap-20">
         <li class="snap-start pl-0 flex w-[100vw] items-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
           <figure class="flex flex-col w-2/3">
@@ -83,6 +107,13 @@ import border from "../assets/images/border.svg";
   inView(inviewelementet, () => {
     inviewelementet.classList.add("slide-in-bottom");
   });
+
+  scroll(
+    animate("#horisontalliste-mobil", {
+      transform: ["translateX(-500vw)", "translateX(0vw)"],
+    }),
+    { target: document.querySelector("#horisontalscrollsection-mobil") }
+  );
 
   scroll(
     animate("#horisontalliste", {
